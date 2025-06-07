@@ -8,23 +8,21 @@
       rel="stylesheet"
       href="https://site-assets.fontawesome.com/releases/v6.7.2/css/all.css"
     />
-    <!-- <script src="https://cdn.jsdelivr.net/npm/
-    @tailwindcss/browser@4"></script> -->
+    <script src="https://cdn.jsdelivr.net/npm/
+    @tailwindcss/browser@4"></script>
     <title>The Shoe Company</title>
   </head>
   <body class="bg-black text-white">
     <!-- logo -->
-    <header class="flex justify-between items-center w-[95%] mx-auto">
-      <a href="#">
-        <img
-          class="w-24 md:w-32"
-          src="/01_The Shoe Company/asset/logo.png"
-          alt=""
-        />
+    <header
+      class="flex justify-between items-center w-[95%] mx-auto fixed top-0 backdrop-blur-xs"
+    >
+      <a href="#" style="margin-left: 8px">
+        <img class="w-24 md:w-32" src="/asset/logo.png" alt="" />
         <p class="text-[12px] -mt-6 md:text-sm md:-mt-8">THE SHOE COMPANY</p>
       </a>
       <!-- navbar -->
-      <nav class="hidden md:block space-x-10 lg:space-x-6 lg:text-[20px] sm:">
+      <nav class="hidden md:block space-x-10 lg:space-x-6 lg:text-[20px]">
         <a href="#">Home</a>
         <a href="#how-it-works?">How It Works?</a>
         <a href="#about">About</a>
@@ -37,24 +35,59 @@
     </header>
     <!-- Home Section -->
     <section
-      class="flex flex-col md:flex-row justify-center md:mx-auto md:gap-20 px-4"
+      class="flex flex-col md:flex-row justify-center md:mx-auto md:gap-20 px-8 md:px-32 mt-14 md:mt-28"
     >
-      <p class="mt-12 md:mt-32 text-5xl md:text-8xl font-bold">
+      <p class="mt-16 md:mt-32 text-5xl md:text-8xl font-bold">
         THE <br />
         SHOE <br />COMPANY
       </p>
-      <div class="md:w-[600px] md:pr-10 md:mt-24 md:ml-12">
-        <img src="01_The Shoe Company/asset/Banner-shoe.png" alt="" />
+      <div class="md:w-[600px] w-96 mx-auto md:pr-10 md:mt-24 md:ml-10">
+        <img src="/asset/Banner-shoe.png" alt="" />
       </div>
     </section>
     <!-- HOW it Works -->
     <section id="how-it-works?" class="flex flex-col">
-      <h2 class="font-bold text-2xl md:text-4xl md:leading-10 text-center mt-16 mx-auto">
+      <h2
+        class="font-bold text-2xl md:text-4xl md:leading-10 text-center mt-20 mx-auto"
+      >
         Have they finally made <br />
         the perfect workout shoe?
       </h2>
-      <div class="h-56 w-60 mx-auto block mt-16 md:h-[850px] md:w-[740px] ">
-        <img src="01_The Shoe Company/asset/Shoe-2.png" alt="">
+      <div
+        class="h-56 w-60 mt-32 mx-auto block md:h-[850px] md:w-[740px] relative"
+      >
+        <img src="/asset/Shoe-2.png" alt="" />
+        <!-- ARROW-1 -->
+        <div class="absolute -ml-20 md:-ml-52 md:mt-14 top-0  md:w-60">
+          <h6 class="text-xs md:text-2xl font-bold">THE HEEL</h6>
+          <p class="text-[8px] md:text-[16px] mt-1">
+            The heel is well-built, has <br />
+            appropriate elevation and is <br />not too rigid.
+          </p>
+          <img class="md:h-44 md:w-48 h-16 w-20 md:ml-auto" src="asset/arrow-1.png" alt="" />
+        </div>
+        <!-- arrow-2 -->
+        <div class="absolute md:ml-40 md:bottom-20 -bottom-12 ml-8 w-60">
+          <img class="md:h-44 md:w-48 h-16 translate-x-6 " src="asset/arrow-3.png" alt="" />
+          <h6 class="text-xs md:text-2xl font-bold -translate-10  md:-translate-24">TRACTION</h6>
+          <p class="text-[8px] md:text-[16px] mt-1 -translate-10 md:-translate-24">
+            The shoe has good traction <br />
+            and doesn't slip easily.
+          </p>
+        </div>
+        <!-- arrow-3 -->
+        <div class="absolute -top-10 md:-right-44 md:ml-96 translate-x-40 md:translate-0">
+          <h6 class="text-xs md:text-2xl font-bold">THE FRONT</h6>
+          <p class="text-[8px] md:text-[16px]">
+            The front is comfortable and <br />adjusts well to the shape of
+            <br />your foot.
+             <img
+            class="md:h-44 md:w-48 h-16 md:-ml-52 md:translate-y-24 "
+            src="asset/arrow-2.png"
+            alt=""
+          />
+          </p>
+        </div>
       </div>
     </section>
   </body>
